@@ -1,0 +1,469 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{width: 6px;}
+
+::-webkit-scrollbar-track{background-color: transparent;}
+
+::-webkit-scrollbar-thumb{background-color: greenyellow;}
+
+
+header{
+    z-index: 999;
+    /* position: absolute; */
+    /* position: sticky; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+.header{
+    position: fixed;
+    z-index: 999;
+}
+.header.sticky{
+    padding: 15px 95px;
+    background: crimson;
+    z-index: 99999;
+}
+header .brand{
+    color: #AFCB06;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-shadow: 1px 1px #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 999999999999;
+}
+header .brand span{
+    color: pink;
+    /* color: #A8A6A7 ; */
+    padding-left: 20px;
+}
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a::before{
+    content: '';
+    position: absolute;
+    background: #e74a4a;
+    width: 10px;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover::before{
+    width: 100%;
+}
+section{
+    padding: 100px 200px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696E9;
+}
+.home::before{
+    z-index: 777;
+    content: "";
+    position: absolute;
+    background-color: rgba(3, 96, 251, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 70px;
+    display: none;
+}
+.home .content.active{
+    display: block;
+}
+.home .content h1{
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 70px;
+    margin-bottom: -2px;
+}
+.home .content h2{
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.home .content p{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 23px;
+    margin-bottom: 35px;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover{
+    transform: scale(1.3);
+    color: #e74a4a;
+}
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+.slider-navigation .nav-btn.active{
+    background: #2696E9;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.6);
+}
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+} 
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+} 
+ /* Basic button styling */
+ .content a{
+    display: block;
+    color: inherit; /* Inherits color from parent */
+    text-decoration: none; /* Removes underline */
+    z-index: 888;
+}
+.content .btn {
+    position: relative; /* Allows for positioning child elements (like the hover effect) */
+    color: rgb(17, 17, 16); /* Button text color */
+    font-size: .8rem; /* Font size */
+    font-weight: 600; /* Bold text */
+    text-transform: uppercase; /* Capitalizes all letters */
+    letter-spacing: 3px; /* Adds space between letters */
+    max-width: fit-content; /* Button width adapts to content */
+    border: 1px solid #fff; /* Black border */
+    padding: 18px 45px; /* Space inside the button */
+    overflow: hidden; /* Hides any overflowing content */
+    z-index: 1; /* Keeps button on top of the background */
+}
+
+/* Hover background effect */
+.btn::before {
+    content: ""; /* Adds an empty block to create the hover effect */
+    position: absolute;
+    bottom: 100%; /* Places it above the button initially */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%);
+    width: 200%; /* Creates a large circle effect */
+    height: 200%;
+    border-radius: 50%; /* Makes it a circle */
+    background-color: white; /* Circle color */
+    transition: 0.5s ease; /* Smooth transition */
+    z-index: -1; /* Keeps it behind the button text */
+}
+/* Transition for the text inside the button */
+.btn .text {
+    transition: 0.25s ease;
+}
+/* Hidden secondary text (will appear on hover) */
+.btn .text-2 {
+    position: absolute;
+    top: 100%; /* Initially hidden below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: black; /* Text color */
+}
+/* Hover effects */
+.btn:hover::before {
+    bottom: -50%; /* Moves the background circle into view */
+}
+.btn:hover .text-1 {
+    transform: translateY(-40px); /* Moves the first text up */
+}
+.btn:hover .text-2 {
+    top: 50%; /* Moves the second text into view */
+    transform: translate(-50%, -50%); /* Centers it perfectly */
+}
+/* Secondary button background and text color */
+.btn-secondary {
+    /* background-color: rgb(206, 97, 97); */
+    background: transparent;
+    color: black;
+}
+.btn-secondary::before {
+    background-color: rgb(53, 153, 225); /* Background circle color on hover */
+}
+.btn-secondary .text-2 {
+    color: white; /* Secondary text color on hover */
+}
+
+/* Media Query */
+
+@media(max-width:1040px){
+    header{
+        padding: 12px 20px;
+    }
+    header .brand{
+        font-size: 1.5em;
+    }
+    section{
+        padding: 100px 20px;
+    }
+    .home .content h1{
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 70px;
+    }
+    .home .content h2{
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .home .media-icons{
+        right: 15px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navigation .navigation-items a{
+        color: #fff;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+        margin: 15px;
+        z-index: 999;    
+    }
+    header .navigation .navigation-items a:before{
+        background: transparent;
+        height: 5px;
+    }
+    header .navigation.active .navigation-items{
+        position: fixed;
+        background-image: url(./image/rockland3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 90%;
+        margin: 20px;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        z-index: 99999;
+    }
+    header .navigation.active .navigation-items::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(10, 9, 9, 0.4);
+      } 
+    .menu-btn{
+        background: url(menubg.png) no-repeat;
+        background-size: 40px;
+        color: #fff;
+        background-position: center;
+        width: 50px;
+        height: 45px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 99999999;
+        background: url(closebg.png) no-repeat;
+        background-size: 15px;
+        background-position: center;
+        transition: 0.3s ease;
+        border-radius: 50%;
+        border: 1px solid #b5b3b3;
+    }
+
+}
+
+
+
+.container3D{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+}
+.box3d{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    transform: perspective(1500px) rotateY(0deg);
+}
+.box3d img{
+    width: 200px;
+    height: 200px;
+}
+.box3d span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+.box3d span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.btnss{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 30px;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btnss .btnn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnss .btnn:active{
+    background: #fff;
+}
+.btnss .btnn::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+.btnss .btnn.prevv::before{
+    transform: rotate(225deg) translate(-2.5px, 2.5px);
+}
+.btnss .btnn:active::before{
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+
+@media (max-width: 480px) {
+    
+    .box3d{
+        transform: perspective(600px) rotateY(0deg);
+    }
+}
