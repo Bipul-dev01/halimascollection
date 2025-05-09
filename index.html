@@ -111,6 +111,108 @@
     </section>
 
 
+<!-- Shop By category html start -->
+
+<div class="container py-5">
+  <h2 class="section-title">Shop By Category</h2>
+  <div class="row justify-content-center g-4">
+
+    <!-- Category 1 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="skincare.html" class="category-link">
+          <img src="image/ShopByCategory/skincare.jpeg" alt="Skincare" class="category-img">
+          <h5>Skincare</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="makeup.html" class="category-link">
+          <img src="image/ShopByCategory/makeup.webp" alt="Makeup" class="category-img">
+          <h5>Makeup</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="haircare.html" class="category-link">
+          <img src="image/ShopByCategory/haircare.jpeg" alt="Hair Care" class="category-img">
+          <h5>Hair Care</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category 4 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="haircare.html" class="category-link">
+          <img src="image/ShopByCategory/fragrance.jpeg" alt="Hair Care" class="category-img">
+          <h5>Fragrance</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category 5 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="haircare.html" class="category-link">
+          <img src="image/ShopByCategory/personalcare.jpeg" alt="Hair Care" class="category-img">
+          <h5>Personal Care</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category 6 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="category-box">
+        <a href="haircare.html" class="category-link">
+          <img src="image/ShopByCategory/babycare.jpeg" alt="Hair Care" class="category-img">
+          <h5>Baby Care</h5>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Shop By category html end -->
+
+
+<!-- Company Status html start -->
+<div class="container-fluid containerStatus py-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Category 1 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="categoryStatus-box">
+        <img src="image/CompanyStatus/Delivery.png" alt="Skincare" class="category-img">
+      </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="categoryStatus-box">
+        <img src="image/CompanyStatus/money-back.png" alt="Makeup" class="category-img">
+      </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="categoryStatus-box">
+        <img src="image/CompanyStatus/Call-centre.png" alt="Hair Care" class="category-img">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Company Status html end -->
+
+<br>
     <div class="container3D">
         <div class="box3d">
             <span style="--i:1;"><img src="./3dImages/kamill-Face-wash.png"></span>
@@ -129,7 +231,7 @@
     </div>
 
  <!-- Footer Start -->
- <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+ <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s">
     <div class="container pt-5 pb-4 custom-footer-container">
         <div class="row g-2">
             <div class="col-lg-3 col-md-6">
@@ -198,5 +300,18 @@
 
 
     <script src="script.js"></script>
+
+
+ <!-- Sticky Navigation Bar on Scroll using -->
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("changeBackgroundColor");
+        }else{
+            $("header").removeClass("changeBackgroundColor");
+        }
+    })
+</script>
+   
 </body>
 </html>
