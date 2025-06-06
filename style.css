@@ -961,7 +961,7 @@ section.productgallery {
 
 /*** Footer End ***/
 
-
+/* E-commerce products css starts */
 /* Container */
 .flex-box {
   display: flex;
@@ -1157,120 +1157,283 @@ section.productgallery {
     width: 100%;
   }
 }
+/* E-commerce products css ends */
 
+/* Fixed Social Icons CSS Start */
+.fixedSocialBar{
+  position: fixed;
+  top: 40vb;
+  right: 0; /* Changed from default (left) to right */
+  height: auto;
+}
 
+.fixedSocialBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* .flex-box{
-    display: flex;
-    width: 1000px;
-    margin: 20px auto;
+.fixedSocialBar li {
+  margin: 10px 0;
 }
-.left{
-    width: 50%;
+
+.fixedSocialBar a {
+  color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
 }
-.big-img{
-    width: 350px;
+
+.fixedSocialBar ion-icon {
+  font-size: 26px;
+  padding: 10px;
 }
-.big-img img{
-    width: inherit;
+
+.fixedSocialBar span {
+  position: absolute;
+  right: 100px; /* Changed from left to right */
+  padding: 8px 15px;
+  transition: all 0.5s;
+  border-radius: 5px;
+  opacity: 0;
+  white-space: nowrap;
 }
-.images{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin-top: 15px;
+
+.fixedSocialBar a:hover span {
+  opacity: 1;
+  right: 65px; /* Adjusted tooltip hover position */
 }
-.small-img{
-    width: 70px;
-    overflow: hidden;
-    border: 1.5px solid black;
+
+.fixedSocialBar span::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -20px; /* Changed from left to right */
+  border-left: 10px solid;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
 }
-.small-img img{
-    width: inherit;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+/* Background Colors */
+.fixedSocialBar .facebook * {
+  background: #3b5998;
+  border-top-left-radius: 5px;
 }
-.small-img:hover img{
-    transform: scale(1.2);
+.fixedSocialBar .instagram * {
+  background: #ea4c89;
 }
-.url{
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(0, 102, 255);
+.fixedSocialBar .youtube * {
+  background: #ef402d;
 }
-.pname{
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 50px;
+.fixedSocialBar .linkedin * {
+  background: #267a28;
+  border-top-left-radius: 5px;
 }
-.ratings i{
-    color: rgb(255, 136, 0);
+
+/* Tooltip Arrow Colors */
+.fixedSocialBar .facebook span::after {
+  border-left-color: #3b5998;
 }
-.price{
+.fixedSocialBar .instagram span::after {
+  border-left-color: #ea4c89;
+}
+.fixedSocialBar .youtube span::after {
+  border-left-color: #ef402d;
+}
+.fixedSocialBar .linkedin span::after {
+  border-left-color: #267a28;
+}
+@media (max-width: 460px){
+  .fixedSocialBar ion-icon {
     font-size: 20px;
-    font-weight: 500;
-    margin: 20px 0;
+    padding: 8px;
+  }
+
 }
-.size{
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+/* Fixed Social Icons CSS End */
+
+
+/* Base Footer Styles Start */
+.custom-footer {
+  background-color: #111;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  padding: 60px 20px 20px;
 }
-.size p{
-    font-size: 18px;
-    font-weight: 500;
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.psize{
-    width: 60px;
-    height: 30px;
-    border: 1px solid #ff5e00;
-    color: #000;
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1 1 calc(25% - 30px); /* 4 columns */
+  min-width: 220px;
+}
+
+/* Footer Logo */
+.logo-img {
+  height: 150px; /* Adjust as needed */
+  width: auto;
+  padding-bottom: 20px;
+}
+
+/* Footer Headings & Text */
+.footer-col h4 {
+  color: #f5a623;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Lists */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #f5a623;
+}
+
+.footer-col ul li::before {
+  content: "> ";
+  color: #f5a623;
+  margin-right: 5px;
+}
+
+/* Remove arrows from contact info */
+.footer-col ul.no-arrow li::before {
+  content: none;
+}
+
+/* Contact Icons */
+.footer-col ul.no-arrow li i {
+  margin-right: 8px;
+  color: #f5a623;
+}
+
+/* Social Icons */
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;               /* Set background */
+  color: #007bff;                 /* Icon color */
+  margin-right: 10px;
+  border-radius: 50%;            /* Perfect circle */
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #f5a623;
+  color: white;
+}
+
+/* Divider */
+.custom-footer hr {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ccc;
+}
+
+.footer-bottom a {
+  color: #f5a623;
+  text-decoration: none;
+}
+.footer-bottom .highlighted {
+  color: #f5a623;
+}
+
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.footer-col ul.no-arrow li {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-col ul.no-arrow li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .footer-col {
+    flex: 1 1 calc(50% - 30px); /* 2 columns */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-col {
+    flex: 1 1 100%; /* 1 column */
+  }
+
+  .footer-socials a {
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
     text-align: center;
-    margin: 0 10px;
-    cursor: pointer;
+  }
 }
-.psize.active{
-    border-width: 1.5px;
-    color: #ff5e00;
-    font-weight: 500;
-}
-.quantity{
-    display: flex;
-}
-.quantity p{
-    font-size: 18px;
-    font-weight: 500;
-}
-.quantity input{
-    width: 40px;
-    font-size: 17px;
-    font-weight: 500;
-    text-align: center;
-    margin-left: 15px;
-}
-.btn-box{
-    display: flex;
-    margin-top: 40px;
-}
-.btn-box button{
-    font-size: 18px;
-    padding: 8px 25px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    color: white;
-}
-.cart-btn{
-    background-color: #ff5e00;
-    margin-right: 20px;
-}
-.buy-btn{
-    background-color: #00aeff;
-}
-.cart-btn:hover{
-    background-color: #ff3c00;
-}
-.buy-btn:hover{
-    background-color: #0066ff;
-} */
+
+/* Base Footer Styles End */
