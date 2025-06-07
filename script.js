@@ -17,46 +17,23 @@
 // });
 
 // Toggle menu
+
 const menuBtn = document.querySelector(".menu-btn");
+const closeBtnContainer = document.querySelector(".close-btn");
 const navigation = document.querySelector(".navigation");
 
 menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    navigation.classList.toggle("active");
+    navigation.classList.add("active");
+    menuBtn.style.display = "none";
+    closeBtnContainer.style.display = "block";
 });
 
-// Video slider navigation
-// const btns = document.querySelectorAll(".nav-btn");
-// const sliders = document.querySelectorAll(".video-slide");
-// const contents = document.querySelectorAll(".content");
+closeBtnContainer.addEventListener("click", () => {
+    navigation.classList.remove("active");
+    closeBtnContainer.style.display = "none";
+    menuBtn.style.display = "block";
+});
 
-// let currentSlide = 0;
-// const totalSlides = sliders.length;
-
-// const slidernav = (manual) => {
-//     btns.forEach((btn) => btn.classList.remove("active"));
-//     sliders.forEach((slide) => slide.classList.remove("active"));
-//     contents.forEach((content) => content.classList.remove("active"));
-
-//     btns[manual].classList.add("active");
-//     sliders[manual].classList.add("active");
-//     contents[manual].classList.add("active");
-// };
-
-// btns.forEach((btn, i) => {
-//     btn.addEventListener("click", () => {
-//         currentSlide = i;
-//         slidernav(i);
-//     });
-// });
-
-// const autoSlide = () => {
-//     currentSlide = (currentSlide + 1) % totalSlides;
-//     slidernav(currentSlide);
-//     setTimeout(autoSlide, 5000);
-// };
-
-// setTimeout(autoSlide, 5000);
 
 // ChatGPT
 //**************************************************
