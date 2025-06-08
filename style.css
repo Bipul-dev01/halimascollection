@@ -1194,6 +1194,17 @@ section.productgallery {
   margin: 10px 0 0;
   padding: 0;
 }
+@media (max-width: 600px) {
+  .containerGallery .gallery .box {
+    width: 90%;
+    height: auto;
+  }
+  .containerGallery .gallery .box .imgBox img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /*** Footer Start ***/
 .container-fluid {
