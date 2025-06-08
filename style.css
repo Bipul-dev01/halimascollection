@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -22,11 +20,9 @@ html {
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: greenyellow;
 }
@@ -43,6 +39,7 @@ header {
   padding: 15px 200px;
   transition: 0.5s ease;
   background-color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
 }
 .header {
   position: fixed;
@@ -52,6 +49,7 @@ header {
 header .brand {
   color: goldenrod;
   font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 4px;
   text-shadow: 1px 1px #fff;
@@ -73,7 +71,8 @@ header .navigation {
 header .navigation .navigation-items a {
   position: relative;
   color: #fff;
-  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
   font-weight: 400;
   text-decoration: none;
   margin-left: 30px;
@@ -99,25 +98,22 @@ header .navigation .navigation-items a:hover::before {
   z-index: 999999999999999999;
 }
 .close-btn img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
 }
 
 .productcategory {
   position: fixed;
   top: 70px;
 }
-/* .productcategory .navigation-items{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
-} */
+
 .productcategory .navigation-category .category-items a {
   position: relative;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   margin-left: 35px;
   transition: 0.3s ease;
@@ -172,7 +168,7 @@ section {
 .home .content {
   z-index: 888;
   color: #fff;
-  width: 70%;
+  width: 90%;
   margin-top: 70px;
   display: none;
 }
@@ -181,7 +177,8 @@ section {
 }
 .home .content h1 {
   font-size: 2.5em;
-  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -190,6 +187,7 @@ section {
 }
 .home .content h2 {
   font-size: 2em;
+  font-family: "Montserrat", sans-serif;
   color: rgb(229, 22, 177);
   font-weight: 600;
   letter-spacing: 2px;
@@ -206,6 +204,7 @@ section {
 }
 .home .media-icons a {
   color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
   transition: 0.3s ease;
 }
@@ -279,7 +278,7 @@ section {
   letter-spacing: 3px; /* Adds space between letters */
   max-width: fit-content; /* Button width adapts to content */
   border: 1px solid #fff; /* Black border */
-  padding: 18px 45px; /* Space inside the button */
+  padding: 15px 40px; /* Space inside the button */
   overflow: hidden; /* Hides any overflowing content */
   z-index: 1; /* Keeps button on top of the background */
 }
@@ -348,17 +347,17 @@ section {
     padding: 100px 20px;
   }
   .home .content h1 {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 70px;
+    letter-spacing: 3px;
+    line-height: 30px;
   }
   .home .content h2 {
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   .home .media-icons {
     right: 15px;
@@ -390,9 +389,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
-  .productcategory .navigation-category{
+  .productcategory .navigation-category {
     justify-content: center;
     align-items: center;
   }
@@ -402,11 +400,12 @@ section {
     justify-content: center;
     align-items: center;
   }
-  .productcategory .navigation-category .category-items a{
+  .productcategory .navigation-category .category-items a {
     margin-bottom: 10px;
     margin-left: 5px;
+    font-size: 1em;
   }
-  
+
   header .navigation .navigation-items a {
     color: #fff;
     font-size: 1.2em;
@@ -422,7 +421,7 @@ section {
     position: fixed;
     background-color: #0066ff;
     width: 90%;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -454,7 +453,7 @@ section {
 .category-box {
   background-color: #f9f9f9;
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
@@ -479,15 +478,24 @@ section {
 }
 
 .section-title {
-  font-weight: bold;
+  margin-top: 30px;
   margin-bottom: 30px;
+  font-weight: 600;
   text-align: center;
   color: #333;
+  font-family: "Montserrat", sans-serif;
 }
 
 .category-link {
   text-decoration: none;
   color: inherit;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.category-link h5 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .category-link:hover h5 {
@@ -518,12 +526,18 @@ section {
   max-width: 100%;
   height: 250px;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 .categoryStatus-box:hover .category-img {
   transform: scale(1.03);
+}
+@media (max-width: 480px) {
+  .category-img {
+    height: 200px;
+  }
 }
 
 /* Company Status style end */
@@ -557,6 +571,8 @@ header.changeBackgroundColor {
   color: #faf8f8;
 }
 
+
+/* 3D Image slider css start */
 .container3D {
   display: flex;
   align-items: center;
@@ -639,12 +655,51 @@ header.changeBackgroundColor {
   border-top: 3px solid #000;
   border-right: 3px solid #000;
 }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .box3d {
+    width: 70vw;
+    max-width: 250px;
+  }
+
+  .btnss .btnn {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 @media (max-width: 480px) {
   .box3d {
-    transform: perspective(600px) rotateY(0deg);
+    width: 85vw;
+    max-width: 200px;
+    transform: perspective(800px) rotateY(0deg);
+  }
+
+  .btnss .btnn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btnss {
+    bottom: 20px;
+    gap: 15px;
+  }
+
+  .btnss .btnn::before {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  .btnss .btnn:active::before {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
   }
 }
+
+/* 3D Image slider css end */
+
 
 /* Hotline call */
 .pulse {
