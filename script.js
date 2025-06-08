@@ -21,15 +21,18 @@
 const menuBtn = document.querySelector(".menu-btn");
 const closeBtnContainer = document.querySelector(".close-btn");
 const navigation = document.querySelector(".navigation");
+const productcategory = document.querySelector(".productcategory");
 
 menuBtn.addEventListener("click", () => {
     navigation.classList.add("active");
+    productcategory.classList.add("active");
     menuBtn.style.display = "none";
     closeBtnContainer.style.display = "block";
 });
 
 closeBtnContainer.addEventListener("click", () => {
     navigation.classList.remove("active");
+    productcategory.classList.remove("active");
     closeBtnContainer.style.display = "none";
     menuBtn.style.display = "block";
 });
