@@ -428,7 +428,7 @@ section {
     position: fixed;
     background-color: #0066ff;
     width: 90%;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -865,7 +865,7 @@ header.changeBackgroundColor {
 
 
 
-/* #contactUs {
+#contactUs {
   position: relative;
   width: 100%;
   padding: 40px 100px;
@@ -1082,7 +1082,7 @@ header.changeBackgroundColor {
     width: 330px;
     height: 165px;
   }
-} */
+} 
 /* Contact Us Page Styling start  */
 
 
