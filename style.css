@@ -1848,69 +1848,107 @@ section.productgallery {
 }
 /* Terms & Conditions css end */
 
+/* Privacy Policy CSS start */
 
-.privacy-section {
-  padding: 30px 20px;
-  background-color: #fffefb;
-  font-family: 'Roboto', sans-serif;
+/* Privacy Policy Base Styling */
+.halima-privacy {
+  padding: 10px 20px;
+  background-color: #fefefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-}
-
-.privacy-section .privacy-container {
-  max-width: 800px;
-  margin: auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.privacy-section .privacy-container h1 {
-  font-size: 2rem;
-  color: #b55d5d;
-  margin-bottom: 20px;
-}
-
-.privacy-section .privacy-container h1 i,
-.privacy-section .privacy-container h2 i {
-  margin-right: 8px;
-}
-
-.privacy-section .privacy-container h2 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 25px;
-}
-
-.privacy-section .privacy-container p {
-  font-size: 1rem;
   line-height: 1.6;
-  margin: 10px 0;
 }
 
-.privacy-section a {
-  color: #b55d5d;
+.halima-privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.halima-privacy-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.halima-privacy-container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #444;
+}
+
+.halima-privacy-container p {
+  margin-bottom: 15px;
+}
+
+.halima-privacy-container ul {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.halima-privacy-container ul li {
+  margin-bottom: 10px;
+  list-style: none;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.halima-privacy-container ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #888;
+}
+
+/* Link Styling */
+.halima-privacy-container a {
+  color: #0077cc;
   text-decoration: none;
 }
 
-.privacy-section a:hover {
+.halima-privacy-container a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .privacy-section .privacy-container {
-    padding: 20px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .halima-privacy-container {
+    padding: 25px 20px;
   }
 
-  .privacy-section .privacy-container h1 {
+  .halima-privacy-container h1 {
     font-size: 1.6rem;
   }
 
-  .privacy-section .privacy-container h2 {
-    font-size: 1rem;
+  .halima-privacy-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .halima-privacy {
+    padding: 10px 10px;
   }
 
-  .privacy-section .privacy-container p {
+  .halima-privacy-container {
+    padding: 20px 15px;
+  }
+
+  .halima-privacy-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .halima-privacy-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .halima-privacy-container p,
+  .halima-privacy-container li {
     font-size: 0.95rem;
   }
 }
+
+/* Privacy Policy CSS start */
