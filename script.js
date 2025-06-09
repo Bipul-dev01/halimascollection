@@ -22,12 +22,15 @@ const menuBtn = document.querySelector(".menu-btn");
 const closeBtnContainer = document.querySelector(".close-btn");
 const navigation = document.querySelector(".navigation");
 const productcategory = document.querySelector(".productcategory");
+const header = document.querySelector(".header");
+
 
 menuBtn.addEventListener("click", () => {
     navigation.classList.add("active");
     productcategory.classList.add("active");
     menuBtn.style.display = "none";
     closeBtnContainer.style.display = "block";
+    header.removeClass("changeBackgroundColor");
 });
 
 closeBtnContainer.addEventListener("click", () => {
