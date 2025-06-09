@@ -1952,3 +1952,119 @@ section.productgallery {
 }
 
 /* Privacy Policy CSS start */
+
+
+/* FAQS CSS start */
+
+.order-section .order-container {
+  max-width: 1000px;
+  margin: 40px auto 60px;
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.order-section h2 {
+  font-size: 2em;
+  color: #c44d58;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.order-section .order-box {
+  background: #fff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.order-section .order-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.order-section .order-box p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.order-section ol {
+  padding-left: 20px;
+}
+
+.order-section ol li {
+  margin: 12px 0;
+  font-size: 1.05em;
+}
+
+/* FAQ SECTION */
+.faq-section .faq-container {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.faq-section h2 {
+  font-size: 2em;
+  color: #c44d58;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.faq-section .faq-box {
+  background: #fff;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.faq-section .faq-box h3 {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  color: #444;
+  font-weight: 600;
+}
+
+.faq-section .faq-box p {
+  font-size: 1.05em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.faq-section code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .order-section h2,
+  .faq-section h2 {
+    font-size: 1.6em;
+  }
+
+  .order-section .order-box h3,
+  .faq-section .faq-box h3 {
+    font-size: 1.2em;
+  }
+
+  .order-section .order-box,
+  .faq-section .faq-box {
+    padding: 18px 20px;
+  }
+}
+
+/* FAQS CSS end */
