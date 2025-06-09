@@ -67,7 +67,6 @@ header .brand:hover {
 
 header .navigation {
   position: relative;
-  opacity: 1 !important;
 }
 header .navigation .navigation-items a {
   position: relative;
@@ -108,7 +107,6 @@ header .navigation .navigation-items a:hover::before {
   position: fixed;
   top: 70px;
   margin-left: -25px;
-  opacity: 1 !important;
 }
 
 .productcategory .navigation-category .category-items a {
@@ -122,35 +120,27 @@ header .navigation .navigation-items a:hover::before {
   transition: 0.3s ease;
   padding: 3px 20px;
   border-radius: 10px;
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .one {
   background-color: green;
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .two {
   background-color: rgb(225, 34, 17);
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .three {
   background-color: rgb(14, 3, 96);
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .four {
   background-color: rgb(221, 7, 206);
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .five {
   background-color: green;
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .six {
   background-color: rgb(203, 145, 11);
-  opacity: 1 !important;
 }
 .productcategory .navigation-category .category-items .seven {
   background-color: rgb(10, 42, 226);
-  opacity: 1 !important;
 }
 
 /* Header / Navbar CSS End */
@@ -427,7 +417,7 @@ section {
     color: #fff;
     font-size: 1.2em;
     letter-spacing: 3px;
-    margin: 15px;
+    margin: 10px;
     z-index: 9999999999;
   }
   header .navigation .navigation-items a:before {
@@ -569,6 +559,21 @@ header.changeBackgroundColor {
   border-bottom: 1px solid #fff;
   z-index: 1000000;
 }
+/* Default sticky navbar style */
+header.changeBackgroundColor {
+  background: #151269;
+  opacity: 0.7;
+  border-bottom: 1px solid #fff;
+  z-index: 1000000;
+}
+
+/* On mobile view, override the opacity */
+@media (max-width: 768px) {
+  header.changeBackgroundColor {
+    opacity: 1;
+  }
+}
+
 
 .navbarAnotherPage {
   margin-bottom: 150px;
@@ -1677,3 +1682,100 @@ section.productgallery {
 }
 
 /* Base Footer Styles End */
+
+/* About Us Section CSS Start */
+
+.wrapperMessage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(99deg, rgb(27, 1, 14) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  margin: 50px 0;
+  overflow: hidden;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.wrapperMessage h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 29px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.messageMainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.messageImage img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.message p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.messageBox div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.messageBox div:nth-child(1) { top: 12%; left: 42%; animation: animate 10s linear infinite; }
+.messageBox div:nth-child(2) { top: 70%; left: 50%; animation: animate 7s linear infinite; }
+.messageBox div:nth-child(3) { top: 17%; left: 6%; animation: animate 9s linear infinite; }
+.messageBox div:nth-child(4) { top: 20%; left: 60%; animation: animate 10s linear infinite; }
+.messageBox div:nth-child(5) { top: 75%; left: 5%; animation: animate 6s linear infinite; }
+.messageBox div:nth-child(6) { top: 80%; left: 70%; animation: animate 12s linear infinite; }
+.messageBox div:nth-child(7) { top: 60%; left: 80%; animation: animate 15s linear infinite; }
+.messageBox div:nth-child(8) { top: 32%; left: 30%; animation: animate 16s linear infinite; }
+.messageBox div:nth-child(9) { top: 90%; left: 25%; animation: animate 9s linear infinite; }
+.messageBox div:nth-child(10) { top: 20%; left: 80%; animation: animate 5s linear infinite; }
+
+@keyframes animate {
+  0% { transform: scale(0) translateY(0) rotate(0); opacity: 1; }
+  100% { transform: scale(1.3) translateY(-90px) rotate(360deg); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .messageMainBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .messageImage img {
+    width: 250px;
+    height: 250px;
+  }
+  .message p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .messageBox div {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+  }
+  .messageBox div:nth-child(1) { top: 8%; left: 42%; }
+  .messageBox div:nth-child(4) { top: 45%; left: 70%; }
+  .messageBox div:nth-child(8) { top: 37%; left: 10%; }
+}
+
+/* About Us Section CSS End */
