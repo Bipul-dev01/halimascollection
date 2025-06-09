@@ -1779,3 +1779,138 @@ section.productgallery {
 }
 
 /* About Us Section CSS End */
+
+
+/* Terms & Conditions css start */
+.terms-section {
+  padding: 30px 20px;
+  background-color: #fff9f5;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+.terms-section .terms-container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section .terms-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #b45f06;
+}
+
+.terms-section .terms-container h1 i {
+  color: #e67e22;
+  margin-right: 10px;
+}
+
+.terms-section .terms-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  color: #2c3e50;
+}
+
+.terms-section .terms-container h2 i {
+  margin-right: 8px;
+  color: #27ae60;
+}
+
+.terms-section .terms-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .terms-section .terms-container {
+    padding: 20px;
+  }
+
+  .terms-section .terms-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .terms-section .terms-container h2 {
+    font-size: 1rem;
+  }
+
+  .terms-section .terms-container p {
+    font-size: 0.95rem;
+  }
+}
+/* Terms & Conditions css end */
+
+
+.privacy-section {
+  padding: 30px 20px;
+  background-color: #fffefb;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.privacy-section .privacy-container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-section .privacy-container h1 {
+  font-size: 2rem;
+  color: #b55d5d;
+  margin-bottom: 20px;
+}
+
+.privacy-section .privacy-container h1 i,
+.privacy-section .privacy-container h2 i {
+  margin-right: 8px;
+}
+
+.privacy-section .privacy-container h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 25px;
+}
+
+.privacy-section .privacy-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.privacy-section a {
+  color: #b55d5d;
+  text-decoration: none;
+}
+
+.privacy-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .privacy-section .privacy-container {
+    padding: 20px;
+  }
+
+  .privacy-section .privacy-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .privacy-section .privacy-container h2 {
+    font-size: 1rem;
+  }
+
+  .privacy-section .privacy-container p {
+    font-size: 0.95rem;
+  }
+}
