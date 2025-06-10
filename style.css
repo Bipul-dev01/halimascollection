@@ -446,6 +446,7 @@ section {
     width: 37px;
     height: 37px;
     padding-top: 4px;
+    margin-top: 10px;
     cursor: pointer;
     transition: 0.3s ease;
     position: relative;
