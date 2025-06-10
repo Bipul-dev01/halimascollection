@@ -45,9 +45,6 @@ header {
   position: fixed;
   padding-top: 8px;
   z-index: 999;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 header .brand {
   color: rgb(240, 177, 18);
@@ -55,7 +52,6 @@ header .brand {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 4px;
-  /* text-shadow: 1px 1px #fff; */
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -101,7 +97,6 @@ header .navigation .navigation-items a:hover::before {
   z-index: 999999999999999999;
 }
 .close-btn img {
-  /* background-size: 40px; */
   width: 38px;
   height: 38px;
   padding-top: 5px;
@@ -1075,24 +1070,35 @@ section.productgallery {
 .containerGallery {
   position: relative;
   background: #e6c0e2;
-  /* background: #262626; */
   margin-top: 10px;
   width: 100%;
-  /* width: 100vw; */
 }
 .containerGallery .head h2 {
+  font-family: "Montserrat", sans-serif;
   color: crimson;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.1rem;
+  font-weight: 600;
   padding: 30px;
 }
-/* .head h4{
-    color: yellow;
-    text-align: center;   
-} */
-.containerGallery .gallery .content p {
+
+.containerGallery .gallery .box .details .content h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #ff0;
   text-align: center;
 }
+.containerGallery .gallery .box .details .content p {
+  margin: 8px 0 0;
+  padding: 0;
+  text-align: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; 
+}
+
 .containerGallery .gallery {
   position: relative;
   max-width: 100%;
@@ -1133,7 +1139,6 @@ section.productgallery {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  /* background: rgba(0,0,0,.8); */
   background: crimson;
   opacity: 0.8;
   transform: scaleY(0);
@@ -1147,23 +1152,10 @@ section.productgallery {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 25px;
   color: #fff;
   text-align: center;
+}
 
-}
-.containerGallery .gallery .box .details .content h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
-  color: #ff0;
-  text-align: center;
-}
-.containerGallery .gallery .box .details .content p {
-  margin: 10px 0 0;
-  padding: 0;
-  text-align: center;
-}
 @media (max-width: 600px) {
   .containerGallery .gallery .box {
     width: 90%;
