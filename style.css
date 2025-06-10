@@ -36,15 +36,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 200px;
+  padding: 14px 200px;
   transition: 0.5s ease;
   background-color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
 }
 .header {
   position: fixed;
-  padding-top: 5px;
+  padding-top: 8px;
   z-index: 999;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 header .brand {
   color: rgb(240, 177, 18);
@@ -105,7 +108,7 @@ header .navigation .navigation-items a:hover::before {
 
 .productcategory {
   position: fixed;
-  top: 70px;
+  top: 73px;
   margin-left: -25px;
 }
 
@@ -446,7 +449,6 @@ section {
     width: 37px;
     height: 37px;
     padding-top: 4px;
-    margin-top: 10px;
     cursor: pointer;
     transition: 0.3s ease;
     position: relative;
