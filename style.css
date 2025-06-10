@@ -1150,11 +1150,23 @@ section.productgallery {
 .containerGallery .gallery .box .details .content {
   position: absolute;
   top: 50%;
+  left: 0; /* Changed from 50% */
+  width: 100%; /* Added to ensure it takes full width */
+  transform: translateY(-50%); /* Changed to only vertical centering */
+  /* padding: 50px; */
+  color: #fff;
+  text-align: center;
+  padding: 0 20px; /* Add some horizontal padding to prevent text from touching edges */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+/* .containerGallery .gallery .box .details .content {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-}
+} */
 
 @media (max-width: 600px) {
   .containerGallery .gallery .box {
