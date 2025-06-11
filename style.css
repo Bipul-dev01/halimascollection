@@ -1262,6 +1262,7 @@ section.productgallery {
   color: rgb(0, 102, 255);
 }
 .brand {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #333;
@@ -1271,6 +1272,7 @@ section.productgallery {
   color: #ff5e00;
 }
 .pname {
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin-top: 20px;
@@ -1279,72 +1281,31 @@ section.productgallery {
   color: rgb(255, 136, 0);
   margin-right: 2px;
 }
-.price {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 20px 0;
-}
+
 
 /* Description Section */
 .desc {
+  font-family: "Montserrat", sans-serif;
   margin: 20px 0;
+}
+.desc p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: green;
 }
 .desc ul {
   padding-left: 20px;
 }
 .desc ul li {
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
   line-height: 1.6;
 }
-
-/* Size Section */
-.size {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  flex-wrap: wrap;
-}
-.size p {
-  font-size: 18px;
-  font-weight: 500;
-  margin-right: 10px;
-}
-.psize {
-  width: 60px;
-  height: 30px;
-  border: 1px solid #ff5e00;
-  color: #000;
-  text-align: center;
-  line-height: 30px;
-  margin: 5px 10px 0 0;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.psize.active {
-  border-width: 1.5px;
-  color: #ff5e00;
-  font-weight: 500;
-}
-
-/* Quantity */
-.quantity {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-.quantity p {
-  font-size: 18px;
-  font-weight: 500;
-}
-.quantity input {
-  width: 50px;
-  font-size: 17px;
-  font-weight: 500;
-  text-align: center;
-  margin-left: 15px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.brief-desc{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 /* Buttons */
@@ -1355,7 +1316,8 @@ section.productgallery {
   flex-wrap: wrap;
 }
 .btn-box button {
-  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   padding: 10px 25px;
   border: none;
   outline: none;
