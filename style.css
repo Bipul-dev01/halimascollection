@@ -1180,6 +1180,9 @@ section.productgallery {
     width: 100%;
     height: auto;
   }
+  .containerGallery .gallery .box .details .content p {
+    font-size: 13px;
+  }
 }
 
 /*** Footer Start ***/
