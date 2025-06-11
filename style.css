@@ -1084,11 +1084,20 @@ section.productgallery {
   color: #ff0;
   text-align: center;
 }
+.containerGallery .gallery .box .details .content h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 5px;
+  text-align: center;
+}
 .containerGallery .gallery .box .details .content p {
   margin: 8px 0 0;
   padding: 0;
   text-align: center;
-  text-align: center;
+  /* text-align: justify; */
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
