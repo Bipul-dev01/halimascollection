@@ -8,6 +8,7 @@ function loaderAnimation() {
     }, 3200)
 }
 
+
 loaderAnimation()
 
 // Toggle menu
