@@ -26,12 +26,12 @@
 <body>
 
   <!-- Preloader -->
-    <!-- <div id="loading">
+    <div id="loading">
         <div class="ring"></div>
         <div class="ring"></div>
         <div class="ring"></div>
         <span class="loading-text">Loading...</span>
-    </div> -->
+    </div>
 
   <!-- Header / Navbar html Start -->
   <header class="header">
@@ -426,6 +426,38 @@
     </footer>
   <!-- Footer End -->
 
+  <!-- At the end of body -->
+
+
+  <!-- Responsive Video Slide by JS Start -->
+
+<script>
+  function switchVideoSources() {
+    const isMobile = window.innerWidth <= 768;
+    const videos = document.querySelectorAll('.video-slide');
+
+    videos.forEach(video => {
+      const originalSrc = video.getAttribute('src');
+      if (!originalSrc) return;
+
+      const fileName = originalSrc.split('/').pop();
+      const newSrc = isMobile
+        ? `./webM/mobile/${fileName}`
+        : `./webM/${fileName}`;
+
+      if (video.getAttribute('src') !== newSrc) {
+        video.setAttribute('src', newSrc);
+        video.load();
+      }
+    });
+  }
+
+  window.addEventListener('load', switchVideoSources);
+  window.addEventListener('resize', switchVideoSources);
+</script>
+
+<!-- Responsive Video Slide by JS End -->
+ 
 
   <!-- JavaScript Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
