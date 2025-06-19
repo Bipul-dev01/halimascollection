@@ -612,6 +612,9 @@ section {
   .image-wrapper {
     margin-bottom: 2px;
   }
+  .category-link h5 {
+    margin-top: -15px;
+  }
 }
 
 /* Shop By category style end */
